@@ -1,0 +1,7 @@
+server:
+  port: 9084
+spring:
+  datasource:
+    url: jdbc:mysql://servidor/clientes_prod
+    username: root
+    password:
