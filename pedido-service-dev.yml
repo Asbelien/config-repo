@@ -43,3 +43,11 @@ resilience4j:
       productoRetry:
         maxAttempts: 3
         waitDuration: 2s
+      clienteRetry:
+        maxAttempts: 3
+        waitDuration: 2s
+  bulkhead:
+    instances:
+      productoBulkhead:
+        maxConcurrentCalls: 2
+        maxWaitDuration: 1s
