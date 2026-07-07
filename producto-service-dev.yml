@@ -39,3 +39,11 @@ resilience4j:
       categoriaBulkhead:
         maxConcurrentCalls: 2
         maxWaitDuration: 1s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
