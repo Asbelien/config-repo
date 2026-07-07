@@ -43,3 +43,11 @@ resilience4j:
       pedidoRetry:
         maxAttempts: 3
         waitDuration: 2s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
